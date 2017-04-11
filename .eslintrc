@@ -1,0 +1,11 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+        // windows linebreaks when not in production environment
+        "linebreak-style": ["error", "windows"]
+    }
+}
