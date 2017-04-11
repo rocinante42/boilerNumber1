@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    // add rules here
+    "arrow-parens": ["error", "as-needed"],
+    "react/jsx-filename-extension": 0,
+    "react/prop-types": [2, { "skipUndeclared": true }],
+    "react/forbid-prop-types": 0,
+    "no-nested-ternary": 0,
+    "no-underscore-dangle": 0,
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "no-unused-expressions": [2, { "allowShortCircuit": true }],
+    "no-plusplus": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "prefer-stateless-function": [1, { "ignorePureComponents": true }],
+    // windows linebreaks when not in production environment
+    //"linebreak-style": ["error", "windows"]
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    // add globals here
+  }
+}
