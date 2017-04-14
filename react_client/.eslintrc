@@ -22,7 +22,7 @@
     "jsx-a11y/no-static-element-interactions": 0,
     "prefer-stateless-function": [1, { "ignorePureComponents": true }],
     // windows linebreaks when not in production environment
-    //"linebreak-style": ["error", "windows"]
+    "linebreak-style": 0
   },
   "plugins": [
     "react"

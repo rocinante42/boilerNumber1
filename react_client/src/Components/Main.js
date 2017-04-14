@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './../logo.svg';
 import './../App.css';
 
-import Test from './Test';
+// Rendering all elements inside the Main wrapper with props and dispatch function included.
 
 class Main extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class Main extends React.Component {
           <h2>Welcome to React</h2>
         </div>
         <div>
-         <Test/>
+          {this.props.children}
         </div>
       </div>
     );

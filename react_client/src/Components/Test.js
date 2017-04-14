@@ -1,14 +1,26 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actionCreators from './../Actions/testAction';
 
-class Test extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render() {
-    return (
-      <div>Hola mundo!!!!</div>
-      );
-  }
+
+
+const Test = () => (
+  <div>
+    <br />
+      Hola Mundo <Link to="/test2">Click aqui</Link>
+  </div>
+);
+
+function mapStateToProps(state) {
+  return {
+    testReducer: state.testReducer,
+  };
 }
 
-export default Test;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Test));
