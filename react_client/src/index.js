@@ -6,14 +6,15 @@ import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import 'bootstrap/dist/css/bootstrap.css';
 import rootReducer from './Reducers/index';
 // Components
 import App from './App';
 import Test from './Components/Test';
 import Test2 from './Components/Test2';
-import Login from './Components/Login';
+import LoginPage from './Components/Login/LoginPage';
 // extras
-import './index.css';
+
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -41,7 +42,7 @@ const router = (
         <Redirect from="/" to="/login" />
         <Route path="/test" component={Test} />
         <Route path="/test2" component={Test2} />
-        <Route path="/login" component={Login} />
+        <Route path="/login" component={LoginPage} />
       </App>
     </ConnectedRouter>
   </Provider>
