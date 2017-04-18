@@ -36,8 +36,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "path": "^0.12.7"
+    "fixed-data-table": "^0.6.3",
+    "fixed-data-table-2": "^0.7.15",
+    "node-json-db": "^0.7.3",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
   }
 }

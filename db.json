@@ -1,16 +1,94 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "firstname": "Lucas",
-            "password": "password",
-            "email": "lucas@email.com"
-        },
-        {
-            "id": 2,
-            "firstname": "Pedro",
-            "password": "password",
-            "email": "pedro@email.com"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Lucas",
+      "password": "password",
+      "username": "lucas@email.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Pedro",
+      "password": "password",
+      "username": "pedro@email.com"
+    },
+    {
+      "id": 3,
+      "firstname": "Jon",
+      "password": "password",
+      "username": "jon@kelsus.com"
+    }
+  ],
+  "iron-pieces": [
+    {
+      "id": 1,
+      "Customer": "Null",
+      "Serial_Number": "0407EL020-4",
+      "Manufacturer": "SPM",
+      "Product_Type": "TEE",
+      "Size": "3\"",
+      "Iron_Description": "3\" MxFxF TEE",
+      "Next_Inspection_Due": "09/10/2017"
+    },
+    {
+      "id": 2,
+      "Customer": "Null",
+      "Serial_Number": "041317CPT2-1",
+      "Manufacturer": "SPM",
+      "Product_Type": "PUP JOINT",
+      "Size": "4\"",
+      "Iron_Description": "4\"X48\" NPS NON DET",
+      "Next_Inspection_Due": "09/13/2017"
+    },
+    {
+      "Customer": "Null",
+      "Serial_Number": "132294",
+      "Manufacturer": "FLOWVALVE",
+      "Size": "3",
+      "Product_Type": "SWIVEL JOINT",
+      "Iron_Description": "STYLE 50 MXF",
+      "Next_Inspection_Due": "2017-05-05T18:00:00.000Z",
+      "id": 3
+    },
+    {
+      "Customer": "Null",
+      "Serial_Number": "1407PPG091-3",
+      "Manufacturer": "SPM",
+      "Size": "3\"",
+      "Product_Type": "PUP JOINT",
+      "Iron_Description": "3\"X72\" NPS DET O.D. 3.500",
+      "Next_Inspection_Due": "2017-05-09T18:00:00.000Z",
+      "id": 4
+    },
+    {
+      "Customer": "Null",
+      "Serial_Number": "1407PPG125-5",
+      "Manufacturer": "SPM",
+      "Size": "3\"",
+      "Product_Type": "PUP JOINT",
+      "Iron_Description": "3\"X120\" NPS DET O.D. 3.500",
+      "Next_Inspection_Due": "2017-07-09T18:00:00.000Z",
+      "id": 5
+    },
+    {
+      "Customer": "Null",
+      "Serial_Number": "14016",
+      "Manufacturer": "FLOWVALVE",
+      "Size": "3\"",
+      "Product_Type": "PUP JOINT",
+      "Iron_Description": "3\"X120\" NPS",
+      "Next_Inspection_Due": "2017-08-09T18:00:00.000Z",
+      "id": 6
+    },
+    {
+      "Customer": "Null",
+      "Serial_Number": "14153-03",
+      "Manufacturer": "FORUM",
+      "Size": "3\"",
+      "Product_Type": "SWIVEL JOINT",
+      "Iron_Description": "3\" STYLE 10 MXM",
+      "Next_Inspection_Due": "2017-09-09T18:00:00.000Z",
+      "id": 7
+    }
+  ]
 }

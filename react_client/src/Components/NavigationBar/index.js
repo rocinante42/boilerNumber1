@@ -1,36 +1,25 @@
 import React from 'react';
-import { Container, Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { Container } from 'reactstrap';
+import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
 class NavigationBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false,
-    };
-  }
-
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
-
   render() {
-    const _style = { backgroundColor: '#45477f', color: 'white' };
+    const _style = { backgroundColor: '#333', color: 'white' };
     return (
       <div>
-        <Navbar style={_style} inverse light toggleable>
+        <Navbar style={_style} inverse collapseOnSelect>
           <Container>
-            <NavbarToggler right onClick={this.toggle} />
-            <NavbarBrand>Iron RE-Certification</NavbarBrand>
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+            <Navbar.Header>
+              <Navbar.Toggle />
+              <Navbar.Brand style={{ color: 'white' }}>Iron <span style={{ color: '#f4bc42' }}>RE</span>-Certification</Navbar.Brand>
+            </Navbar.Header>
+            <Navbar.Collapse>
+              <Nav pullRight>
                 <NavItem>
                   Github
                 </NavItem>
               </Nav>
-            </Collapse>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>

@@ -7,12 +7,14 @@ import createHistory from 'history/createBrowserHistory';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
 import rootReducer from './Reducers/index';
 // Components
 import App from './App';
 import Test from './Components/Test';
-import Test2 from './Components/Test2';
+import Home from './Components/Home';
 import LoginPage from './Components/Login/LoginPage';
+import Footer from './Components/Common/Footer';
 // extras
 
 
@@ -23,6 +25,7 @@ const middleware = routerMiddleware(history);
 const defaultState = {
   testReducer: [],
   loginReducer: [],
+  sessionReducer: { isLoggedIn: true },
 };
 
 const store = createStore(
@@ -41,8 +44,9 @@ const router = (
       <App>
         <Redirect from="/" to="/login" />
         <Route path="/test" component={Test} />
-        <Route path="/test2" component={Test2} />
+        <Route path="/home" component={Home} />
         <Route path="/login" component={LoginPage} />
+        <Footer />
       </App>
     </ConnectedRouter>
   </Provider>
